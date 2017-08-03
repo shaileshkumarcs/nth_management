@@ -14,7 +14,7 @@
 			<c:forEach var="tempUsers" items="${users }">
 			<tr>
 				<td>${tempUsers.email }</td>
-				<td>${tempUsers.userName }</td>
+				<td></td>
 				<td></td>
 				<td></td>
 			</tr>

@@ -30,15 +30,15 @@
 				<div class="col-md-6" style="border-right:1px solid #f1f1f1;padding-bottom:5px;">
 					<h4>Sign Up</h4>
 					<p>Enter your details below</p>
-					<form action="" method="POST">
+					<form action="/home/signupform" method="POST">
 						<input class="form-control" 
 										type="text" placeholder="Full Name" name="name" required/><br/>
 						<input class="form-control" 
-										type="text" placeholder="Enter Username" name="uname" required/><br/>
+										type="text" placeholder="Enter Username" name="uername" required/><br/>
 						<input class="form-control" 
-										type="password" placeholder="Enter Password" name="psw" required/><br/>
+										type="password" placeholder="Enter Password" name="pssword" required/><br/>
 						<input class="form-control" 
-										type="password" placeholder="ReEnter Password" name="psw1" required/><br/>
+										type="password" placeholder="ReEnter Password" name="pssword1" required/><br/>
 						<a class="submitbtn btn" onclick="backform()" href="#"><b>&larr;</b>Back</a>
 						<button class="pull-right submitbtn" type="submit">Sign Up<b>&rarr;</b></button>
 					</form>
