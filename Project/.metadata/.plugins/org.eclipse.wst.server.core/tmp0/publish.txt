@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Aug 03 23:39:53 IST 2017
+org.eclipse.jst.jee.server\:/binary\:/media/shailesh/28B9AC71111F4FC4/Project/MyNewDream/Project/MyDreamProject/WebContent/WEB-INF/lib/spring-web-4.3.8.RELEASE-sources.jar=WEB-INF/lib/spring-web-4.3.8.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:/media/shailesh/28B9AC71111F4FC4/Project/MyNewDream/Project/MyDreamProject/WebContent/WEB-INF/lib/spring-web-4.3.8.RELEASE.jar=WEB-INF/lib/spring-web-4.3.8.RELEASE.jar

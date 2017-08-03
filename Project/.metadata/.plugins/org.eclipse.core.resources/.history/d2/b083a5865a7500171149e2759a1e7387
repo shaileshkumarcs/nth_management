@@ -1,0 +1,12 @@
+/*Navbar CSS*/
+
+a{
+	color:#FFF99F;
+}
+.navbar{
+	background-color: #041D51;
+	margin-bottom:0px;
+}
+#myCarousel{
+	mar
+}

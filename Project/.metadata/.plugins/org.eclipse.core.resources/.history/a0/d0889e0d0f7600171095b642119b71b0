@@ -1,0 +1,44 @@
+/*Navbar CSS*/
+
+a{
+	color:#FFF99F;
+}
+.navbar{
+	background-color: #041D51;
+	margin-bottom:0px;
+}
+#myCarousel{
+	max-height:150vh !important;
+}
+.shopname{
+	font-family: 'Codystar';
+	font-size: 22px;
+	color:#FF8500;
+}
+.item{
+	max-height:50vh;
+}
+.about{
+	background-color: #f2f2f2;
+}
+.logo {
+    color: #f4511e;
+    font-size: 180px;
+    margin-top:20px;
+}
+.logo-small{
+    color: #f4511e;
+    font-size: 50px;
+    margin-top:20px;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+
+}

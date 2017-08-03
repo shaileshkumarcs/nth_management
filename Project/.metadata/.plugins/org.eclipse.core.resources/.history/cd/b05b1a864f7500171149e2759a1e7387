@@ -1,0 +1,5 @@
+package com.mydream.springmvc.controller;
+
+public class HomeController {
+
+}

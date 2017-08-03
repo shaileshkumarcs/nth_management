@@ -1,0 +1,36 @@
+package com.mydream.springmvc.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.mydream.springmvc.entity.Users;
+
+@Repository
+public class UserDAOImpl implements UserDAO {
+
+	// need to inject the session factory
+	@Autowired
+	private SessionFactory sessionFactroy;
+	
+	@Override
+	public List<Users> getUser() {
+		
+		// get current hibernate session
+		Session currentSession = sessionFactroy.getCurrentSession();
+		
+		// create a query
+		Query<Users> theQuery = currentSession.createQuery("from Users", Users.class);
+		
+		// execute query and get result
+		List<Users> users = theQuery.getResultList();
+		
+		// return the results
+		return users;
+	}
+
+}

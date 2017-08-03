@@ -1,0 +1,21 @@
+package com.mydream.springmvc.dao;
+
+import java.util.List;
+
+import com.mydream.springmvc.entity.Users;
+
+public class UserDAOImpl implements UserDAO {
+
+	@Override
+	public List<Users> getUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void signUpUser() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

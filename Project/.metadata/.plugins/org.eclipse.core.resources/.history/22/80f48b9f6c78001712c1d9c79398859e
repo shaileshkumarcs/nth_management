@@ -1,0 +1,144 @@
+package com.mydream.springmvc.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="users")
+public class Users {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
+	private int id;
+	
+	@Column(name="fid")
+	private String facebookid;
+	
+	@Column(name="gid")
+	private String googleId;
+	
+	@Column(name="email")
+	private String email;
+	
+	@Column(name="first_name")
+	private String userName;
+	
+	@Column(name="last_name")
+	private String lastName;
+	
+	@Column(name="password")
+	private String password;
+	
+	@Column(name="picture")
+	private String picture;
+	
+	@Column(name="is_verfied")
+	private String isVerified;
+	
+	@Column(name="m_number")
+	private String contact;
+	
+	public Users(){
+		
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getFacebookid() {
+		return facebookid;
+	}
+
+	public void setFacebookid(String facebookid) {
+		this.facebookid = facebookid;
+	}
+
+	public String getGoogleId() {
+		return googleId;
+	}
+
+	public void setGoogleId(String googleId) {
+		this.googleId = googleId;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getPicture() {
+		return picture;
+	}
+
+	public void setPicture(String picture) {
+		this.picture = picture;
+	}
+
+	public String getIsVerified() {
+		return isVerified;
+	}
+
+	public void setIsVerified(String isVerified) {
+		this.isVerified = isVerified;
+	}
+
+	public String getContact() {
+		return contact;
+	}
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
+	@Override
+	public String toString() {
+		return "Users [id=" + id + ", facebookid=" + facebookid + ", googleId=" + googleId + ", email=" + email
+				+ ", userName=" + userName + ", lastName=" + lastName + ", password=" + password + ", picture="
+				+ picture + ", isVerified=" + isVerified + ", contact=" + contact + "]";
+	}
+}
+
+
+
+
+
+
+
+

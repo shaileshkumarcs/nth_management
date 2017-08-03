@@ -1,0 +1,6 @@
+package com.mydream.springmvc.entity;
+
+
+public class Users {
+
+}

@@ -1,0 +1,34 @@
+package com.mydream.springmvc.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.mydream.springmvc.dao.UserDAO;
+import com.mydream.springmvc.entity.Users;
+
+public class UsersServiceImpl implements UsersService {
+	
+	// need to inject customer dao
+	@Autowired
+	public UserDAO userDAO;
+	
+
+	@Override
+	public List<Users> getUsers() {
+
+		return userDAO.getUsers();
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+package com.mydream.springmvc.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.mydream.springmvc.entity.Users;
+
+public class UserDAOImpl implements UserDAO {
+
+	// need to inject the session factory
+	@Autowired
+	private SessionFactory sessionFactroy;
+	
+	@Override
+	@Transactional
+	public List<Users> getUsers() {
+		
+		// get current hibernate session
+		Session currentSession = sessionFactroy.getCurrentSession();
+		
+		// create a query
+		
+		// execute query and get result
+		
+		// return the results
+		
+		return null;
+	}
+
+	@Override
+	public void signUpUser() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

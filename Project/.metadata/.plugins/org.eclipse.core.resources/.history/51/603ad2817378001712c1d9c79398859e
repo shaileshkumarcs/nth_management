@@ -1,0 +1,5 @@
+package com.mydream.springmvc.service;
+
+public interface UsersService {
+
+}

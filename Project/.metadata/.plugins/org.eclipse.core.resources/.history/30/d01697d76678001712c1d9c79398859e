@@ -1,0 +1,29 @@
+package com.mydream.springmvc.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.mydream.springmvc.dao.UserDAO;
+
+@Controller
+@RequestMapping("/home")
+public class HomeController {
+	
+	//need to inject the Users dao
+	@Autowired
+	private UserDAO userDAO;
+	
+	@RequestMapping("/index")
+	public String indexPage(Model theModel){
+		
+		return "home-page";
+	}
+	@RequestMapping("/users")
+	public String listUser(Model theModel){
+		
+		return "home-page";
+	}
+
+}
